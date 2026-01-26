@@ -46,3 +46,5 @@ illustrant la maîtrise du cycle de vie complet des infrastructures.
 
 Le déploiement d’un bucket S3 a été réalisé via Terraform avec un utilisateur IAM dédié.
 La ressource a ensuite été supprimée afin de maîtriser les coûts AWS.
+
+Une phase de nettoyage du dépôt Git a été réalisée afin de supprimer les fichiers générés et sensibles avant la livraison finale.
