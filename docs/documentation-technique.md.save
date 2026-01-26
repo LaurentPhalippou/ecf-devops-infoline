@@ -1,0 +1,38 @@
+# Documentation technique – Projet InfoLine
+
+## 1. Contexte
+Le projet InfoLine vise à déployer une plateforme web dédiée aux actualités et produits sportifs connectés.
+L’architecture repose sur des principes DevOps, Cloud et microservices afin d’assurer la scalabilité, la disponibilité et l’automatisation des déploiements.
+
+## 2. Objectifs
+- Automatiser le déploiement de l’infrastructure
+- Mettre en place un pipeline CI/CD
+- Déployer des applications conteneurisées sur Kubernetes
+- Implémenter une fonction serverless pour l’authentification
+- Superviser les services via une solution de monitoring
+
+## 3. Choix techniques
+| Composant | Technologie | Justification |
+|--------|------------|---------------|
+| Cloud | AWS | Scalabilité, services managés |
+| IaC | Terraform | Automatisation et reproductibilité |
+| Orchestration | Kubernetes (EKS) | Haute disponibilité |
+| CI/CD | GitHub Actions | Intégration simple |
+| Backend | Spring Boot | Standard Java |
+| Frontend | Angular | Framework moderne |
+| Serverless | AWS Lambda | Gestion événementielle |
+| Monitoring | Elasticsearch / Kibana | Centralisation des logs |
+
+## 4. Environnement de travail
+Le projet est réalisé sur une machine virtuelle Debian 11 (bullseye) Server hébergée sur un poste Windows.
+Debian a été choisi pour sa stabilité, sa fiabilité et son usage courant dans les environnements serveurs professionnels.
+
+## Installation des outils DevOPS
+
+Les outils suivants ont été installés sur la machine Debian 11 (Bullseye) :
+
+- Docker (depôt officiel Docker)
+- Terraform (HashiCorp)
+- AWS CLI v2
+
+Les installations ont été réalisées avec un utilisateur non privilégié disposant de droits sudo, conformément aux bonnes pratiques de sécurité.
