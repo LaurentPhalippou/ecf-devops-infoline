@@ -48,3 +48,12 @@ Le déploiement d’un bucket S3 a été réalisé via Terraform avec un utilisa
 La ressource a ensuite été supprimée afin de maîtriser les coûts AWS.
 
 Une phase de nettoyage du dépôt Git a été réalisée afin de supprimer les fichiers générés et sensibles avant la livraison finale.
+
+## 7. Déploiement Kubernetes (maquette)
+
+Le déploiement Kubernetes a été conçu sous forme de manifests YAML afin de démontrer la compréhension des concepts fondamentaux.
+
+- Un Deployment permet de gérer le cycle de vie du conteneur backend
+- Un Service de type NodePort expose l’application sur le réseau
+
+Le déploiement n’a pas été exécuté sur un cluster Kubernetes réel afin de limiter la complexité de l’infrastructure dans le cadre de l’ECF.
