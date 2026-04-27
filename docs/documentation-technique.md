@@ -38,3 +38,13 @@ Le backend est prévu pour être déployé sur Kubernetes via un Deployment.
 Un Service de type NodePort permet d’exposer l’application.
 
 Le déploiement est fourni sous forme de manifests YAML afin de démontrer la compréhension des concepts sans dépendre d’un cluster local.
+
+## Authentification serverless
+
+Une fonction Java a été développée pour simuler un service d’authentification serverless.
+
+- Fonction stateless
+- Différenciation entre utilisateur et administrateur
+- Compatible avec AWS Lambda
+
+Le déploiement réel n’est pas effectué afin de limiter la complexité dans le cadre de l’ECF.
