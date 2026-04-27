@@ -32,3 +32,9 @@ Le projet InfoLine vise à mettre en place une architecture DevOps permettant de
 - Kubernetes pour l’orchestration
 - AWS comme fournisseur cloud
 
+## Déploiement Kubernetes
+
+Le backend est prévu pour être déployé sur Kubernetes via un Deployment.
+Un Service de type NodePort permet d’exposer l’application.
+
+Le déploiement est fourni sous forme de manifests YAML afin de démontrer la compréhension des concepts sans dépendre d’un cluster local.
