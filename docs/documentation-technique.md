@@ -48,3 +48,11 @@ Une fonction Java a été développée pour simuler un service d’authentificat
 - Compatible avec AWS Lambda
 
 Le déploiement réel n’est pas effectué afin de limiter la complexité dans le cadre de l’ECF.
+
+## Frontend
+
+Deux applications frontend sont prévues :
+- une application principale
+- une interface backoffice
+
+Dans le cadre de l’ECF, ces applications sont simulées afin de se concentrer sur les aspects DevOps (déploiement, conteneurisation, CI/CD).
