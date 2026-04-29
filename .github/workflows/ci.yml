@@ -1,0 +1,27 @@
+name: CI ECF DevOps
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-backend:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupération du code
+        uses: actions/checkout@v4
+
+      - name: Build image Docker backend
+        run: docker build -t ecf-backend ./backend
+
+  check-kubernetes:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupération du code
+        uses: actions/checkout@v4
+
+      - name: Vérification des manifests Kubernetes
+        run: ls -l k8s/

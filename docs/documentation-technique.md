@@ -56,3 +56,14 @@ Deux applications frontend sont prévues :
 - une interface backoffice
 
 Dans le cadre de l’ECF, ces applications sont simulées afin de se concentrer sur les aspects DevOps (déploiement, conteneurisation, CI/CD).
+
+## CI/CD
+
+Un pipeline GitHub Actions est mis en place afin d’automatiser certaines vérifications du projet.
+
+Le pipeline réalise :
+- la récupération du code
+- le build de l’image Docker du backend
+- la vérification de la présence des manifests Kubernetes
+
+Ce pipeline constitue une base d’intégration continue adaptée au contexte de l’ECF.
