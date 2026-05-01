@@ -80,3 +80,32 @@ Cette solution permet :
 - l’analyse des performances
 
 Dans le cadre de l’ECF, l’architecture est documentée sans déploiement réel afin de limiter la complexité.
+
+## Base de données PostgreSQL
+
+Une base de données PostgreSQL est utilisée pour stocker :
+- les utilisateurs
+- les produits
+
+Dans un environnement réel, cette base serait :
+- soit déployée via Docker
+- soit hébergée sur un service managé AWS (RDS)
+
+Elle serait connectée au backend Java pour gérer les opérations CRUD.
+
+## Architecture globale
+
+Le projet repose sur une architecture distribuée :
+
+- Frontend simulé (Angular)
+- Backend conteneurisé avec Docker
+- Base de données PostgreSQL
+- Fonction serverless pour l’authentification
+- Déploiement prévu sur Kubernetes
+- Monitoring via ELK
+- CI/CD via GitHub Actions
+
+Cette architecture permet :
+- la scalabilité
+- la résilience
+- la séparation des responsabilités
