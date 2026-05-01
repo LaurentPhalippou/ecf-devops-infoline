@@ -67,3 +67,16 @@ Le pipeline réalise :
 - la vérification de la présence des manifests Kubernetes
 
 Ce pipeline constitue une base d’intégration continue adaptée au contexte de l’ECF.
+
+## Monitoring
+
+Une solution de monitoring basée sur la stack ELK (Elasticsearch, Logstash, Kibana) est prévue.
+
+Les logs des applications conteneurisées seraient centralisés dans Elasticsearch et analysés via Kibana.
+
+Cette solution permet :
+- la détection d’erreurs
+- la supervision des services
+- l’analyse des performances
+
+Dans le cadre de l’ECF, l’architecture est documentée sans déploiement réel afin de limiter la complexité.
