@@ -4,6 +4,9 @@
 *.tfstate.backup
 .terraform.lock.hcl
 
+# Secrets
+.env
+
 # Logs
 *.log
 

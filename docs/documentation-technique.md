@@ -109,3 +109,22 @@ Cette architecture permet :
 - la scalabilité
 - la résilience
 - la séparation des responsabilités
+
+## Sécurité et bonnes pratiques
+
+### Gestion des accès
+- Utilisation d’un utilisateur non root sur la VM
+- Accès SSH sécurisé
+
+### Gestion des secrets
+- Les clés AWS ne sont pas stockées dans le dépôt Git
+- Utilisation d’un fichier .gitignore pour exclure les fichiers sensibles
+
+### Terraform
+- Les fichiers .tfstate ne sont pas versionnés car ils peuvent contenir des informations sensibles
+
+### Docker
+- Les conteneurs sont exécutés sans privilèges root dans la mesure du possible
+
+### CI/CD
+- Automatisation des processus de build pour éviter les erreurs humaines
