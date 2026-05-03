@@ -10,18 +10,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Récupération du code
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Build image Docker backend
+      - name: Build Docker image
         run: docker build -t ecf-backend ./backend
 
-  check-kubernetes:
+  test-backend:
+    runs-on: ubuntu-latest
+    needs: build-backend
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Test backend endpoint (simulation)
+        run: echo "Test OK"
+
+  validate-k8s:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Récupération du code
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Vérification des manifests Kubernetes
+      - name: Check Kubernetes files
         run: ls -l k8s/

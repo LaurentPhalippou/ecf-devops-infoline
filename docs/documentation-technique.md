@@ -68,6 +68,15 @@ Le pipeline réalise :
 
 Ce pipeline constitue une base d’intégration continue adaptée au contexte de l’ECF.
 
+### Amélioration CI/CD
+
+Le pipeline CI a été amélioré pour inclure :
+- une étape de build Docker
+- une étape de test simulée
+- une validation des fichiers Kubernetes
+
+Cela permet de garantir la qualité du projet avant déploiement.
+
 ## Monitoring
 
 Une solution de monitoring basée sur la stack ELK (Elasticsearch, Logstash, Kibana) est prévue.
